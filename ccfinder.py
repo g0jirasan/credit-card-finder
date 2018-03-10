@@ -31,10 +31,9 @@ if len (sys.argv) < 2:
 
 position = 0
 input_file = sys.argv[1]
+fp = open(input_file, "rb")
 
 while True:
-	
-	fp = open(input_file, "rb")
 	fp.seek(position)
 	byte = fp.read(16)
      	position = position + 1
